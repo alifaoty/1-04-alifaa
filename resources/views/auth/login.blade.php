@@ -11,6 +11,7 @@
 
     <!-- Title Page-->
     <title>Login</title>
+
     @include('partials/css')
 
 </head>
@@ -23,7 +24,7 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
+                                <img src="{{ asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
@@ -42,7 +43,7 @@
                                         <input type="checkbox" name="remember">Remember Me
                                     </label>
                                     <label>
-                                        <a href="#">Forgotten Password?</a>
+                                        <a href="#">Forgot Password?</a>
                                     </label>
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
@@ -55,8 +56,8 @@
                             </form>
                             <div class="register-link">
                                 <p>
-                                    Don't you have account?
-                                    <a href="{{route('register')}}">Sign Up Here</a>
+                                    Don't have an account?
+                                    <a href="{{route('register')}}">Register Here</a>
                                 </p>
                             </div>
                         </div>
@@ -67,7 +68,7 @@
 
     </div>
 
-   @include('partials/script')
+    @include('partials/script')
 
 </body>
 

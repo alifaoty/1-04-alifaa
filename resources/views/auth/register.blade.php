@@ -24,31 +24,31 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                            <img src="{{ asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
+                                <img src="{{ asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="{{(route'register')}}" method="post">
+                            <form action="{{route('register')}}" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <label>Nama</label>
-                                    <input class="au-input au-input--full" type="text" name="username" placeholder="Nama">
+                                    <label>Name</label>
+                                    <input class="au-input au-input--full" type="text" name="name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
-                                    <label>Alamat Email</label>
+                                    <label>Email Address</label>
                                     <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
-                                    <label>Kata Sandi</label>
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Kata Sandi">
+                                    <label>Password</label>
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <label>Konfirmasi Kata Sandi</label>
-                                    <input class="au-input au-input--full" type="password_confirmation" name="password" placeholder="Kata Sandi">
+                                    <label>Password Confirmation</label>
+                                    <input class="au-input au-input--full" type="password" name="password_confirmation" placeholder="Password">
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
-                                        <input type="checkbox" name="aggree">Agree the terms and policy
+                                        <input type="checkbox" name="agree">Agree the terms and policy
                                     </label>
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
@@ -61,8 +61,8 @@
                             </form>
                             <div class="register-link">
                                 <p>
-                                    Already have account?
-                                    <a href="{{(route'login')}}">Sign In</a>
+                                    Already have an account?
+                                    <a href="{{route('login')}}">Login Here</a>
                                 </p>
                             </div>
                         </div>

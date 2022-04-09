@@ -11,15 +11,17 @@
 
     <!-- Title Page-->
     <title>Dashboard</title>
-
     @include('partials/css');
+
 </head>
 
 <body class="animsition">
     <div class="page-wrapper">
+
         <!-- HEADER MOBILE-->
-        @include('partials/header_mobile')
+        @include('partials/header-mobile')
         <!-- END HEADER MOBILE-->
+    
 
         <!-- MENU SIDEBAR-->
         @include('partials/sidebar')
@@ -27,6 +29,7 @@
 
         <!-- PAGE CONTAINER-->
         <div class="page-container">
+
             <!-- HEADER DESKTOP-->
             @include('partials/header')
             <!-- HEADER DESKTOP-->
@@ -38,7 +41,7 @@
         </div>
 
     </div>
-    
+
     @include('partials/script')
 
 </body>
