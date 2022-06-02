@@ -13,8 +13,6 @@
           <a class="nav-link {{ ( $title === 'About') ? 'active': '' }}" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Gallery') ? 'active': '' }}" href="/gallery">Gallery</a>
-        <li class="nav-item">
           <a class="nav-link {{ ( $title === 'Contacts') ? 'active': '' }}" href=" {{ route('contacts.create')}}">Contact Us</a>
         </li>
       </ul>

@@ -23,15 +23,17 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
-        "nama" => "Mark Lee",
-        "email" => "marklee@gmail.com",
-        "gambar" => "marklee.jpg"
-    ]);
-});
-
-Route::get('/gallery', function () {
-    return view('gallery', [
-        "title" => "Gallery"
+        "nama" => "Alifa Oty Salsabilla",
+        "email" => "alifaotysalsabillaaa@gmail.com",
+        "gambar" => "alifa.jpg",
+        "lahir" => "12 Juni 2005",
+        "kota"=>"Purwokerto, Banyumas, Jawa Tengah",
+        "hp"=>"+62 896 7386 7184",
+        "isi"=>"Hello my name is Alifa Oty Salsabilla usually called Alifa.
+            I'm at SMK Telkom Purwokerto. There I majored in Software Engineering, 
+            which studied various digital technologies. I was born in Purwokerto, June 12th, 
+            2005. My hobbies are listening music and reading. Yep, that’s all that I can tell 
+            about myself. Thank you."
     ]);
 });
 
